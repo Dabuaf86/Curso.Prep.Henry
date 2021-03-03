@@ -1,0 +1,5 @@
+Variables: Son formas de almacenar un valor determinado y tiene 3 formas de hacerse (var; let; const)
+Strings: Es un bloque de texto definido en un hilo de caracteres alfa numéricos
+Funciones (argumentos, return): Los argumentos son los elementos a los cuales la función debe aplicar un determinado código. Return devuelve cualquier valor o función contenidos dentro de los parámetros determinados. El código se graba hasta la función return. Lo que sigue no se imprime.
+Declaraciones if: Es una función lógica que determina si se cumple la condición para ejecutar un código u otro.
+Valores (true, false): los booleanos o binarios en JS son true o false y básicamente son variables de tipo lógicas o de flujo de control.
