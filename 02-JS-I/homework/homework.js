@@ -1,22 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "Henry rules";
+let nuevaString = "Henry rules";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = 8;
+let nuevoNum = 8;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+let nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - 5 === 5;
+let nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40;
+let nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 1;
+let nuevoModulo = 21 % 5 === 1;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -164,11 +164,12 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random(1);
+  return Math.random();
 }
 
 function esPositivo(numero) {
-  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
+  //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es 
+  //positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
