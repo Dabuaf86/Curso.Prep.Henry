@@ -115,14 +115,14 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  if(arguments.length < 1) {
+  if(!arguments.length) {
     return 0;
   }
-  let argu = 1;
+  let producto = 1;
   for (let i = 0; i < arguments.length; i++) {
-    argu = argu * arguments[i];
+    producto *= arguments[i];
   }
-  return argu;
+  return producto;
 }
 
 
@@ -136,7 +136,6 @@ function cuentoElementos(arreglo){
       contador++;
     }
   }
-
   return contador;
 }
 
@@ -172,13 +171,13 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  const iguales = new Set(arreglo);
-  if(iguales.size === 1) {
-    return true;
+  let iguales = arreglo[0];
+  for (let i = 1; i < arreglo.length; i++) {
+    if(iguales !== arreglo[i]) {
+      return false
+    }
   }
-  else {
-    return false
-  }
+  return true;
 } 
 
 
@@ -225,20 +224,17 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   let nuevoArray = [];
-  let aumento = numero;
-  let tengoQueInterrumpir = false;
-  for (let i = 0; i < 10; i++) {
-    aumento = aumento + 2;
-    if(aumento === i) {
-      tengoQueInterrumpir = true;
-      break;
+  for (var i = 0; i < 10; i++) {
+    numero += 2;
+    nuevoArray.push(numero);
+    if(numero === i){
+    break;
     }
-    nuevoArray.push(aumento);
   }
-  if(tengoQueInterrumpir) {
-    return "Se interrumpió la ejecución";
+  if(numero === i) {
+      return "Se interrumpió la ejecución";
   } else {
-    return nuevoArray;
+  return nuevoArray;
   }
 }
 
@@ -251,13 +247,12 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   let nuevoArray = [];
-  let aumento = numero;
-  for (let i = 0; i < 10; i++) {
+  for (var i = 0; i < 10; i++) {
     if (i === 5) {
       continue;
     }
-    aumento = aumento + 2;
-    nuevoArray.push(aumento);
+    numero += 2;
+    nuevoArray.push(numero);
   }
   return nuevoArray;
 }
